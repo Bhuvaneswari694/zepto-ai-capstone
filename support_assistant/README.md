@@ -258,15 +258,3 @@ with no API key or network access to any LLM provider. Pushing this image
 anywhere (e.g. Hugging Face Spaces) is an optional, ungraded stretch, not
 required for full marks.
 
-## Optional, ungraded extensions (not required for grading)
-
-- **Real LLM (`MOCK_LLM=0`)**: sign up for a free Groq account at
-  console.groq.com (no credit card required), set `GROQ_API_KEY` and
-  `MOCK_LLM=0` as environment variables, and re-run the server. This switches
-  `classify_intent`'s classification and both generation nodes over to real
-  LLM calls via `graph.py::_call_real_llm`, using the structured prompt in
-  `prompt_template.py` for `retrieve_and_answer`. This path was not exercised
-  for grading — the required baseline above uses only `MOCK_LLM` at default.
-- **Hugging Face Spaces deployment**: the same `Dockerfile` can be pushed to
-  a free-tier CPU Space, with `GROQ_API_KEY` stored as a Space secret (never
-  hardcoded/committed). Not attempted as part of this required submission.
