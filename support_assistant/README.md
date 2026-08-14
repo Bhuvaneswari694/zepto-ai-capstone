@@ -244,7 +244,7 @@ code with zero network calls; at `MOCK_LLM=0`, that same step instead calls a
 real LLM (Groq's free tier by default) using the structured prompt template
 in `prompt_template.py`, with schema-validation retries as described above.
 
-## Docker (required, graded baseline)
+## Docker 
 
 ```bash
 docker build -t zepto-support-assistant .
