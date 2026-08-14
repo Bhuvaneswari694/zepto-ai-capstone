@@ -76,7 +76,40 @@ python 01_eda.py
 python 02_modeling.py
 ```
 
+
 -----------------------------------------------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------------------------------------------
+
+## Module 3: Support Assistant
+
+### Objective
+
+Build a GenAI-powered support assistant that answers Zepto policy-related
+questions using a document corpus, embeddings, ChromaDB, LangGraph, and FastAPI.
+
+### Deliverables
+
+- Zepto policy document corpus
+- Document ingestion and embedding
+- ChromaDB vector retrieval
+- LangGraph intent routing
+- Structured Pydantic output
+- FastAPI `/ask` endpoint
+- Dockerfile
+
+### How to Run
+
+1. Open the `support_assistant` folder.
+2. Install the required dependencies.
+
+```bash
+pip install -r requirements.txt
+
+3. Run:
+python ingest.py
+uvicorn main:app --host 0.0.0.0 --port 7860
+
+author
 
 P. Bhuvaneswari
